@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -14,6 +15,10 @@
 
 </head>
 <body>
+<%
+    String content = (String) request.getServletContext().getAttribute("content");
+%>
+
     <main>
         <h1>Edytor tekstu</h1>
         <p>Edytor ten oparty jest na mechanizmie zapisu w atrybutach kontekstu aplikacji, 
@@ -22,13 +27,11 @@
        
         <form method="post" action="save">
             <label for="mytextarea"></label>
-            <textarea id="mytextarea" >Hello, World!</textarea>
-          </form>    
-          
+            <textarea id="mytextarea" name="content"><%=content%></textarea>
         <div>
             <input class="button" type="submit" value="Zapisz zmiany">
         </div>
-
+        </form>
     </main>
 
 </body>
