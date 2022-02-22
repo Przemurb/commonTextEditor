@@ -14,3 +14,6 @@ p {
     width: 100%;
     background-color: #63a36911;
 }
+#mytextarea {
+    height: 400px;
+}
