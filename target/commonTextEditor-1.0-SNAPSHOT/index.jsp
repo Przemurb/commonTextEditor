@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -46,6 +46,5 @@
         </div>
         </form>
     </main>
-
 </body>
 </html>
