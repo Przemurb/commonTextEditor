@@ -27,7 +27,20 @@
        
         <form method="post" action="save">
             <label for="mytextarea"></label>
-            <textarea id="mytextarea" name="content"><%=content%></textarea>
+            <textarea id="mytextarea" name="content">
+                <%
+                    if(content == null) {
+                %>
+                Hello Misiaku!
+                <%
+                    } else {
+                %>
+                <%=content%>
+                <%
+                    }
+                %>
+
+            </textarea>
         <div>
             <input class="button" type="submit" value="Zapisz zmiany">
         </div>
